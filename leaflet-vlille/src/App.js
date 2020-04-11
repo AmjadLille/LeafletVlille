@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
 import {Icon} from "leaflet";
-import * as veloData from "./data/vlille-stations.json"
+import * as veloData from "./data/vlille-realtime (1).json"
 
 
 export default function App() {
