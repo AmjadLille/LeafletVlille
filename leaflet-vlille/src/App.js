@@ -5,6 +5,13 @@ import { Icon } from "leaflet";
 import * as veloData from "./data/vlille-realtime (1).json"
 
 
+/*const iconVelo = new Icon({
+  iconUrl: "/bicycle-outline.svg",
+  iconAnchor: [5, 55],
+  popupAnchor: [10, -44],
+  iconSize: [25, 55],
+}); */
+
 export default function App() {
   const [veloStation, setVeloStation] = React.useState(null);
 
@@ -23,6 +30,7 @@ export default function App() {
         onclick={() => {
           setVeloStation(velo);
         }}
+        /*icon = {iconVelo} */
       />
     ))}
 
