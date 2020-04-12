@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from "leaflet";
-import * as veloData from "./data/vlille-realtime (1).json"
+import * as veloData from "./data/vlille-realtime.json"
+import Search from "react-leaflet-search";
 
 
 /*const iconVelo = new Icon({
@@ -21,7 +22,8 @@ export default function App() {
       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     />
     {veloData.records.map(velo => (
-      <Marker
+     
+     <Marker
         key={velo.fields.libelle}
         position={[
           velo.geometry.coordinates[1],
@@ -53,7 +55,7 @@ export default function App() {
 
     </Popup>
     )}
-
+    <Search />
   </Map>
 }
 
